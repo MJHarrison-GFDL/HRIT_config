@@ -683,6 +683,11 @@ SEA_ICE_RIGID_MASS = 100.0      !   [kg m-2] default = 1000.0
                                 ! The mass of sea-ice per unit area at which the sea-ice
                                 ! starts to exhibit rigidity
 
+TIDES = True
+TIDE_M2 = True
+TIDE_USE_SAL_SCALAR = True
+TIDE_SAL_SCALAR_VALUE: 0.094
+
 ! === module MOM_sum_output ===
 MAXTRUNC = 100000               !   [truncations save_interval-1] default = 0
                                 ! The run will be stopped, and the day set to a very
