@@ -19,3 +19,6 @@
 [submodule "src/coupler"]
 	path = src/coupler
 	url = git@github.com:NOAA-GFDL/coupler
+[submodule "src/mkmf"]
+	path = src/mkmf
+	url = https://github.com/NOAA-GFDL/mkmf.git
