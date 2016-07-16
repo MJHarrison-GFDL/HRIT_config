@@ -630,10 +630,14 @@ SEA_ICE_RIGID_MASS = 100.0      !   [kg m-2] default = 1000.0
                                 ! The mass of sea-ice per unit area at which the sea-ice
                                 ! starts to exhibit rigidity
 
-TIDES = True
-TIDE_M2 = True
-TIDE_USE_SAL_SCALAR = True
-TIDE_SAL_SCALAR_VALUE = 0.094
+TIDES = True                    ! default = False. If true, apply tidal momentum forcing.
+TIDE_M2 = True                  ! If true, apply tidal momentum forcing at the M2 frequency.
+TIDE_USE_SAL_SCALAR = True      ! If true and TIDES is true, use the scalar approximation
+                                ! when calculating self-attraction and loading
+TIDE_SAL_SCALAR_VALUE = 0.094   ! The constant of proportionality between sea surface 
+                      		! height (really it should be bottom pressure) anomalies 
+                 		! and bottom geopotential anomalies. This is only used if 
+                 		! TIDES and TIDE_USE_SAL_SCALAR are true
 				
 ! === module MOM_sum_output ===
 MAXTRUNC = 100000               !   [truncations save_interval-1] default = 0
