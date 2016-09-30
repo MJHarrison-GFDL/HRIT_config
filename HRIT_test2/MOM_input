@@ -174,7 +174,7 @@ REGRID_COMPRESSIBILITY_FRACTION = 0.01 !   [not defined] default = 0.0
                                 ! When interpolating potential density profiles we can add
                                 ! some artificial compressibility solely to make homogenous
                                 ! regions appear stratified.
-ALE_COORDINATE_CONFIG = "HYBRID:mom6_vgrid.nc,sigma2,FNC1:2,4000,4.5,.01" ! default = "UNIFORM"
+ALE_COORDINATE_CONFIG = "HYBRID:mom6_vgrid.nc,sigma2,dz" ! default = "UNIFORM"
                                 ! Determines how to specify the coordinate
                                 ! resolution. Valid options are:
                                 !  PARAM       - use the vector-parameter ALE_RESOLUTION
