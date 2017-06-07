@@ -15,6 +15,17 @@ CGRID_ICE_DYNAMICS = True       !   If true, use a C-grid discretization of the
                                 ! sea-ice dynamics; if false use a B-grid
                                 ! discretization.
 
+SIS_THICKNESS_ADVECTION_SCHEME = "PCM" ! default = "UPWIND_2D"
+                                ! The horizontal transport scheme for thickness:
+                                !   UPWIND_2D - Non-directionally split upwind
+                                !   PCM    - Directionally split peicewise constant
+                                !   PLM    - Piecewise Linear Method
+                                !   PPM:H3 - Piecewise Parabolic Method (Huyhn 3rd order)
+
+SIS_CONTINUITY_SCHEME = "PCM"   ! default = "UPWIND_2D"
+
+SIS_TRACER_ADVECTION_SCHEME = "PPM:H3" ! default = "UPWIND_2D"
+
 !  Specify the numerical domain.
 NIGLOBAL = 4500                  !    NIGLOBAL and NJGLOBAL are the number of thickness
 NJGLOBAL = 3528                  !  grid points in the zonal and meridional
@@ -36,11 +47,11 @@ ICE_STATS_INTERVAL = 0.25       !    The interval in units of TIMEUNIT between
                                 ! and conservation checks.
 
 !  Specify the time integration scheme for the ice dynamics.
-DT_ICE_DYNAMICS = 300.0        ! The time step used for the slow ice dynamics, 
+DT_ICE_DYNAMICS = 120.0        ! The time step used for the slow ice dynamics, 
                                 ! including stepping the continuity equation and
                                 ! interactions between the ice mass field and 
                                 ! velocities, in s.
-DT_RHEOLOGY = 100.0             ! The sub-cycling time step, in s, for iterating
+DT_RHEOLOGY = 30.0             ! The sub-cycling time step, in s, for iterating
                                 ! the rheology and ice momentum equations. If
                                 ! DT_RHEOLOGY is negative, the time step is set
                                 ! via NSTEPS_DYN.
@@ -65,6 +76,7 @@ C_P = 3925.0                    !    C_P is the heat capacity of sea water in
 SNOW_ALBEDO = 0.88              !    The albedo of dry snow atop sea ice, ND.
 ICE_ALBEDO  = 0.68              !    The albedo of dry bare sea ice, ND.
 ICE_BULK_SALINITY = 5.0         !    The fixed bulk salinity of sea ice, in g/kg.
+
 
 !  Specify the properties of the surface forcing.
 
