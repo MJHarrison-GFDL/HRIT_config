@@ -1,0 +1,12 @@
+GLBb0.08
+1992 1 1 0 0 0
+
+# Ocean diagnostics files
+"ocean_daily",            1, "days",   1, "days", "time"
+
+# High-frequency 2d
+ "ocean_model", "SSH",          "ssh",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "SSU",          "ssu",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "SSV",          "ssv",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "SST",          "sst",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "SSS",          "sss",              "ocean_daily", "all", "mean", "none",2
