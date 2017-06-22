@@ -1,4 +1,0 @@
-! This file specifies restricted channel widths in MOM.  The order is:
-!  [U|V]_width, min_longitude, max_longitude, min_latitude, max_latitude, width
-
-
