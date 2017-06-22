@@ -1,0 +1,11 @@
+ed57d3142a1c7330c5b52fa6361b6002  atmos_mosaic_tile1Xland_mosaic_tile1.nc
+9c3720090e6fdf94220a675add3a2ce9  atmos_mosaic_tile1Xocean_mosaic_tile1.nc
+7eeef6dcb2c2848822baaea3f0f30862  grid_spec.nc
+474475386af87e8e853e671a4842a567  land_mask.nc
+7fd1894fde0190a7bc2565a5cefdbe89  land_mosaic_tile1Xocean_mosaic_tile1.nc
+d77e5302141185b8a14a601573e846f3  ocean_hgrid.nc
+89dadbe79be21e19b7574ff611d5a6db  ocean_mask.nc
+b0df1e2f6a9150da8314d2395d0b272f  ocean_mosaic.nc
+1784adea6a6c26e4a4859765007641e9  salt_restore.nc
+893abbbdc6da821a7be5c125f4b2f031  seawifs_1998-2006_smoothed_2X.nc
+efc67aa1bb55d7b79fb698b621211454  topog.nc
