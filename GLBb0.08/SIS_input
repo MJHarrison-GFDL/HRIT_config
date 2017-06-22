@@ -28,7 +28,7 @@ SIS_TRACER_ADVECTION_SCHEME = "PPM:H3" ! default = "UPWIND_2D"
 
 !  Specify the numerical domain.
 NIGLOBAL = 4500                  !    NIGLOBAL and NJGLOBAL are the number of thickness
-NJGLOBAL = 3527                  !  grid points in the zonal and meridional
+NJGLOBAL = 3297                  !  grid points in the zonal and meridional
                                 !  directions of the physical domain.
 
 REENTRANT_X = True              !    If defined, the domain is zonally reentrant.
