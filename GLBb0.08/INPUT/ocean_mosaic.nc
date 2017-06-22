@@ -1,1 +1,1 @@
-.datasets/OM_4500x329/mosaic_unpacked/ocean_mosaic.nc
+.datasets/GLBb0.08/ocean_mosaic.nc

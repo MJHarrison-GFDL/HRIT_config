@@ -1,1 +1,1 @@
-.datasets/OM_4500x329/mosaic_unpacked/land_mask.nc
+.datasets/GLBb0.08/land_mask.nc

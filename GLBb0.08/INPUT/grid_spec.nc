@@ -1,1 +1,1 @@
-.datasets/OM_4500x329/mosaic_unpacked/grid_spec.nc
+.datasets/GLBb0.08/grid_spec.nc
