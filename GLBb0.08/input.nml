@@ -23,14 +23,15 @@
             days   = 3,
             current_date = 1992,1,1,0,0,0,
             calendar = 'JULIAN',
-            dt_cpld = 3600,
-            dt_atmos = 3600,
+            dt_cpld = 1200,
+            dt_atmos = 1200,
             do_atmos = .false.,
             do_land = .false.,
             do_ice = .true.,
             do_ocean = .true.,
             do_flux = .true.,
-            atmos_npes = 0,
+            atmos_npes = 288,
+	    ocean_npes = 288,
             concurrent = .false.     
             use_lag_fluxes=.false.    
             check_stocks = 0
@@ -44,17 +45,6 @@
             mix_snapshot_average_fields=.false.
 /
 
- &dummy_ice_model_nml
-       ice_layout = 0,0
-       ice_io_layout = 1,1
-       ice_mask_table='MOM_mask_table'
-/
-
- &dummy_ocean_model_nml
-       ocean_layout = 0,0
-       ocean_io_layout = 1,1
-       ocean_mask_table='MOM_mask_table'
-/
 
  &flux_exchange_nml
             debug_stocks = .FALSE.
@@ -126,16 +116,6 @@
 
  &surface_flux_nml
 	   gust_min = 1.e-10
-/
-
- &topo_rough_nml
-         use_topo_rough    = .true.
-         max_topo_rough    = 100.0 
-         topo_rough_factor = 0.01
-/
-
- &topography_nml
-       topog_file = 'INPUT/navy_topography.data.nc'
 /
 
 
