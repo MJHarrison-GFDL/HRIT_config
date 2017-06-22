@@ -72,6 +72,7 @@ dict={}
 sio.loadmat('depth.mat',dict)
 depth=dict['depth'].T
 depth=depth[:-1,:] # Discard last row for bathymetry
+depth[np.isnan(depth)]=0.0 # replace NaNs with zeros
 
 
 def gen_supergrid(plon,ulon,vlon,qlon,plat,ulat,vlat,qlat):
@@ -296,6 +297,11 @@ h3=hashlib.md5(model_grid.D)
 for h in [h1,h2,h3]:
     print h.hexdigest()
 
+
+# Bail out here and use FMS tools for now
+# This code needs to be optimized.
+
+raise()
 
 # Generate mosaic files for FMS exchange grid
 
