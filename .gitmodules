@@ -24,4 +24,4 @@
 	url = https://github.com/NOAA-GFDL/mkmf.git
 [submodule "tools/FRE-NCtools"]
 	path = tools/FRE-NCtools
-	url = git@github.com:NOAA-GFDL/FRE-NCtools.git
+	url = https://github.com/NOAA-GFDL/FRE-NCtools.git
